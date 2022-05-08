@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="tabsPanel">
+        <!-- Tablar -->
+        <div>
+            <ul class="tabsLinks">
+                <li class="tabsItem"><a href="#" class="tabsLink">Часы</a></li>
+                <li class="tabsItem">
+                    <a href="#" class="tabsLink">
+                        Секундомер
+                        <span class="tabsLink__span"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="tabsLinks">
+                <li class="tabsItem active"><a href="#" class="tabsLink">Таймер</a></li>
+                <li class="tabsItem "><a href="#" class="tabsLink">калькулятор</a></li>
+            </ul>
+        </div>
+        <!-- Tablar -->
+        <div class="tabsContent">
+            <div class="clock tabsContentItem ">
+                <div class="arrowClock">
+                    <!-- Soat -->
+                    <div class="arrowClockNumber">
+                        <div class="arrowClockNumber__num arrowClockNumber__num_12">12</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_1"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_2"></div>
+                        <div class="arrowClockNumber__num arrowClockNumber__num_3">3</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_4"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_5"></div>
+                        <div class="arrowClockNumber__num arrowClockNumber__num_6">6</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_7"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_8"></div>
+                        <div class="arrowClockNumber__num arrowClockNumber__num_9">9</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_10"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_11"></div>
+                    </div>
+
+                    <!-- Ko`rsatkichlar  -->
+
+                    <div class="s"></div> <!-- soniya -->
+                    <div class="m"></div> <!-- daqiqa -->
+                    <div class="h"></div> <!-- soat -->
+                </div>
+                <div class="numberClock">
+                    <div class="hours">00</div>
+                    <div class="minutes">00</div>
+                </div>
+            </div>
+            <div class="stopwatch tabsContentItem ">
+                <div class="stopwatch__clock">
+
+                    <div class="stopwatch__clock-description">
+                        <!-- Soat -->
+                        <div class="stopwatch__hours">0</div>
+                        Час.
+                    </div>
+                    <div class="stopwatch__clock-description">
+                        <!-- Daqiqa -->
+                        <div class="stopwatch__minutes">0</div>
+                        Мин.
+                    </div>
+                    <div class="stopwatch__clock-description">
+                        <!-- Soniya -->
+                        <div class="stopwatch__seconds">0</div>
+                        Сек.
+                    </div>
+                </div>
+                <button class="stopwatch__btn">start</button>
+            </div>
+            <div class="timer tabsContentItem active">
+                <div class="timer-content">
+                    <div class="timer__screen">
+                        <div class="timer__clock-description">
+                            <div class="timer__hours"></div>
+                            Час.
+                        </div>
+                        <div class="timer__clock-description">
+                            <div class="timer__minutes"></div>
+                            Мин.
+                        </div>
+                        <div class="timer__clock-description">
+                            <div class="timer__seconds"></div>
+                            Сек.
+                        </div>
+                    </div>
+                    <div class="timer__btns">
+                        <button class="timer__btn">7</button>
+                        <button class="timer__btn">8</button>
+                        <button class="timer__btn">9</button>
+                        <button class="timer__btn">4</button>
+                        <button class="timer__btn">5</button>
+                        <button class="timer__btn">6</button>
+                        <button class="timer__btn">1</button>
+                        <button class="timer__btn">2</button>
+                        <button class="timer__btn">3</button>
+                        <button class="timer__set">PLAY</button>
+                        <button class="timer__btn">0</button>
+                        <button class="timer__clear">CLEAR</button>
+                    </div>
+                </div>
+            </div>
+            <div class="calc tabsContentItem ">
+                <div class="calc-content">
+                    <div class="calc__screen">
+                        <p class="calc__screen-out"></p>
+                    </div>
+                    <div class="calc__btns">
+                        <button class="calc__btn">ac</button>
+                        <button class="calc__btn">+/-</button>
+                        <button class="calc__btn">%</button>
+                        <button class="calc__btn">ce</button>
+                        
+                        <button class="calc__btn">&#8730;</button>
+                        <button class="calc__btn">(</button>
+                        <button class="calc__btn">)</button>
+                        <button class="calc__btn">/</button>
+                        
+                        <button class="calc__btn">7</button>
+                        <button class="calc__btn">8</button>
+                        <button class="calc__btn">9</button>
+                        <button class="calc__btn">*</button>
+                        
+                        <button class="calc__btn">4</button>
+                        <button class="calc__btn">5</button>
+                        <button class="calc__btn">6</button>
+                        <button class="calc__btn">-</button>
+                        
+                        <button class="calc__btn">1</button>
+                        <button class="calc__btn">2</button>
+                        <button class="calc__btn">3</button>
+                        <button class="calc__btn">+</button>
+                        
+                        <button class="calc__btn">.</button>
+                        <button class="calc__btn">0</button>
+                        <button class="calc__btn">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src="./second.mp3" class="second"></audio>
+    <audio src="./Gudok.mp3" class="gudok"></audio>
+    <script src="js/script.js"></script>
+</body>
+
+</html>0
